@@ -186,7 +186,7 @@ function unlockAudio() {
 }
 
 function setAudioUI() {
-  const text = audioEnabled ? 'SND ON' : 'SND OFF';
+  const text = audioEnabled ? 'SOUND ON' : 'SOUND OFF';
   const iconSrc = audioEnabled ? './img/sound.png' : './img/mute.png';
 
   if (audioLabel) audioLabel.textContent = text;
