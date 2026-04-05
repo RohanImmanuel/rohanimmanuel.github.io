@@ -595,7 +595,7 @@ function syncSectionUI() {
     sectionChips.appendChild(el);
   });
 
-  progressLabel.textContent = `Room ${currentSection + 1} / ${sections.length}`;
+  progressLabel.textContent = `Level ${currentSection + 1} / ${sections.length}`;
   progressFill.style.width = `${((currentSection + 1) / sections.length) * 100}%`;
   [...levelList.children].forEach((btn, i) => btn.classList.toggle('active', i === currentSection));
   updateModeButtons();
